@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NbpContentView.swift
 //  ChartTest
 //
 //  Created by Jacek Kosinski U on 11/01/2024.
@@ -8,9 +8,9 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct NbpContentView: View {
 
-    @State private var consumption: [Consumption] = []
+    @State private var rates: [NbpRates] = []
 
 
 
@@ -18,8 +18,8 @@ struct ContentView: View {
 
         VStack {
             Group{
-                if !consumption.isEmpty {
-                    ConsumptionChartView(consumption: $consumption)
+                if !rates.isEmpty {
+                    NbpRatesChartView(rates:  $rates)
                         .frame(minWidth: 450, minHeight: 250)
                         .padding()
                 } else {
@@ -36,8 +36,8 @@ struct ContentView: View {
         .onAppear {
             do {
                 let decoder = JSONDecoder()
-                decoder.dateDecodingStrategyFormatters = [ DateFormatter.json ]
-                 consumption = try decoder.decode([Consumption].self, from: Consumption.data)
+                decoder.dateDecodingStrategyFormatters = [ DateFormatter.jsonNbp ]
+                 rates = try decoder.decode([NbpRates].self, from: NbpRates.data)
             } catch {
                 print(error.localizedDescription)
             }
@@ -46,7 +46,8 @@ struct ContentView: View {
 
 }
 
-#Preview {
-    ContentView()
 
+
+#Preview {
+    NbpContentView()
 }

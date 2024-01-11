@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		764FC0922B4FD14B001FA364 /* ChartTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0912B4FD14B001FA364 /* ChartTestApp.swift */; };
 		764FC0942B4FD14B001FA364 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0932B4FD14B001FA364 /* ContentView.swift */; };
-		764FC0962B4FD14B001FA364 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0952B4FD14B001FA364 /* Item.swift */; };
+		764FC0962B4FD14B001FA364 /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0952B4FD14B001FA364 /* Consumption.swift */; };
 		764FC0982B4FD14C001FA364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764FC0972B4FD14C001FA364 /* Assets.xcassets */; };
 		764FC09C2B4FD14C001FA364 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764FC09B2B4FD14C001FA364 /* Preview Assets.xcassets */; };
+		764FC0A32B4FD245001FA364 /* ConsumptionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0A22B4FD245001FA364 /* ConsumptionChartView.swift */; };
+		764FC0A52B4FD645001FA364 /* NbpRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0A42B4FD645001FA364 /* NbpRates.swift */; };
+		764FC0A72B4FD78C001FA364 /* NbpRatesChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0A62B4FD78C001FA364 /* NbpRatesChartView.swift */; };
+		764FC0A92B4FD83F001FA364 /* NbpContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FC0A82B4FD83F001FA364 /* NbpContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		764FC08E2B4FD14B001FA364 /* ChartTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764FC0912B4FD14B001FA364 /* ChartTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTestApp.swift; sourceTree = "<group>"; };
 		764FC0932B4FD14B001FA364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		764FC0952B4FD14B001FA364 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		764FC0952B4FD14B001FA364 /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
 		764FC0972B4FD14C001FA364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764FC0992B4FD14C001FA364 /* ChartTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChartTest.entitlements; sourceTree = "<group>"; };
 		764FC09B2B4FD14C001FA364 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		764FC0A22B4FD245001FA364 /* ConsumptionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionChartView.swift; sourceTree = "<group>"; };
+		764FC0A42B4FD645001FA364 /* NbpRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NbpRates.swift; sourceTree = "<group>"; };
+		764FC0A62B4FD78C001FA364 /* NbpRatesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NbpRatesChartView.swift; sourceTree = "<group>"; };
+		764FC0A82B4FD83F001FA364 /* NbpContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NbpContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				764FC0912B4FD14B001FA364 /* ChartTestApp.swift */,
 				764FC0932B4FD14B001FA364 /* ContentView.swift */,
-				764FC0952B4FD14B001FA364 /* Item.swift */,
+				764FC0A82B4FD83F001FA364 /* NbpContentView.swift */,
 				764FC0972B4FD14C001FA364 /* Assets.xcassets */,
 				764FC0992B4FD14C001FA364 /* ChartTest.entitlements */,
 				764FC09A2B4FD14C001FA364 /* Preview Content */,
+				764FC0A22B4FD245001FA364 /* ConsumptionChartView.swift */,
+				764FC0A62B4FD78C001FA364 /* NbpRatesChartView.swift */,
+				764FC0952B4FD14B001FA364 /* Consumption.swift */,
+				764FC0A42B4FD645001FA364 /* NbpRates.swift */,
 			);
 			path = ChartTest;
 			sourceTree = "<group>";
@@ -143,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				764FC0942B4FD14B001FA364 /* ContentView.swift in Sources */,
-				764FC0962B4FD14B001FA364 /* Item.swift in Sources */,
+				764FC0A52B4FD645001FA364 /* NbpRates.swift in Sources */,
+				764FC0962B4FD14B001FA364 /* Consumption.swift in Sources */,
+				764FC0A92B4FD83F001FA364 /* NbpContentView.swift in Sources */,
 				764FC0922B4FD14B001FA364 /* ChartTestApp.swift in Sources */,
+				764FC0A72B4FD78C001FA364 /* NbpRatesChartView.swift in Sources */,
+				764FC0A32B4FD245001FA364 /* ConsumptionChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
